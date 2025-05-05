@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #f4f4f9;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background:#050281;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+.navbar.scrolled {
+  background: #050281;
+}
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+.navbar ul li {
+  margin: 0 15px;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.navbar ul li a:hover {
+  color: #ff9c07;
+}
+.search-bar {
+  position: relative;
+}
+.search-bar input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.search-bar button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #0000ff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dark-mode {
+  background-color: #000016;
+  color: white;
+}
+.dark-mode .navbar {
+  background: #1a1a50;
+}
+.dark-mode .search-bar input {
+  background-color: #333;
+  color: white;
+}
+.dark-mode .search-bar button {
+  color: white;
+}
+.dark-mode ul {
+  background: #1a1a50;
+}
+.theme-toggle {
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 15px;
+  color: white;
+  background: none;
+  border: none;
+}
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #000000, #090366);
+  margin-top: 50px;
+}
+
+.hero-section h1 {
+  font-size: 40px;
+  color: #ada6a6;
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 20px;
+  color: #ad9f9f;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: white;
+  background-color: #090366;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #0056b3;
+}
+.testimonials {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 20px;
+  color: #96979c;
+  font-size: 2.5rem;
+}
+
+.testimonial-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-box p:first-child {
+  font-style: italic;
+  color: #57595e;
+  margin-bottom: 10px;
+}
+
+.testimonial-box p:last-child {
+  color: #3f8cff;
+  font-weight: bold;
+}
+.container {
+  background: linear-gradient(135deg, #000000, #090366);
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(49, 65, 212, 0.568);
+  max-width: 100%;
+  flex: 1;
+  padding-bottom: 60px; 
+  margin-bottom: 80px;
+
+}
+
+
+.content h2 {
+  color: #cad2da;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-left: 500px;
+}
+.content p {
+  color: #a4abb6;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  font-size: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: white;
+  background-color: #090366;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+  margin-left: 590px;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+.plan {
+  background: linear-gradient(135deg, #000000, #090366);
+    padding: 20px;
+  margin-top: 100px;
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+  justify-content: space-between;
+margin-left: 457px;
+color: white;
+margin-bottom: 40px;
+}
+
+.plan h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 19px;
+    margin: 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.plan ul li {
+    margin: 10px 0;
+}
+
+.sign-up {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: white;
+  background-color: #090366;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+
+}
+
+.sign-up:hover {
+  background-color: #0056b3;
+}
+.footer {
+    background: #050281;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
